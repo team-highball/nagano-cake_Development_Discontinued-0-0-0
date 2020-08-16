@@ -13,6 +13,7 @@ class Admin::ProductsController < ApplicationController
     end
 
     def create
+        #test
         @product = Product.new(params[:id])
         if @product.save
             redirect_to admin_product_path(params[:id])
